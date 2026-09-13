@@ -1,7 +1,7 @@
-
 import toga
 from toga.style import Pack
 from toga.style.pack import COLUMN, ROW, BOLD
+import analyzerpy  # Conecta o motor de análise de dados
 
 
 class DataAnalyzerApp(toga.App):
@@ -63,7 +63,7 @@ class DataAnalyzerApp(toga.App):
         self.main_window.content = main_box
         self.main_window.show()
 
-    # Evento: Selecionar Arquivos Nativamente
+    # Evento: Selecionar Arquivos Natively
     async def action_choose_files(self, widget):
         try:
             files = await self.main_window.open_file_dialog(
@@ -82,7 +82,7 @@ class DataAnalyzerApp(toga.App):
             self.selected_files = []
             self.status_label.text = f"Error selecting files: {e}"
 
-    # Evento: Rodar Análise
+    # Evento: Rodar Análise conectado ao analyzerpy.py
     def action_run_analysis(self, widget):
         if len(self.selected_files) < 2:
             self.output_multiline.value = (
@@ -93,12 +93,8 @@ class DataAnalyzerApp(toga.App):
         self.output_multiline.value = "Reading and processing files... Please wait.\n"
 
         try:
-            # Ponto de conexão futuro com o analisador.py
-            report = (
-                "=== ANALYSIS REPORT ===\n\n"
-                f"Ready to process {len(self.selected_files)} selected database(s)!\n\n"
-                "(The engine analisador.py will be connected in the next step)."
-            )
+            # Chama a função real do arquivo analyzerpy.py
+            report = analyzerpy.process_datasets(self.selected_files)
             self.output_multiline.value = report
         except Exception as error:
             self.output_multiline.value = f"An error occurred:\n{str(error)}"
