@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Briefcase-Version: 0.4.5
+Name: data_analyzer
+Formal-Name: Data Analyzer Pro
+App-ID: com.example.data-analyzer
+Version: 0.1.0
+Home-page: https://github.com/thiagosilvaventura/App-Scrap-
+Download-URL: https://github.com/thiagosilvaventura/App-Scrap-
+Author: Thiago Ventura
+Author-email: developer@example.com
+Summary: App para cruzamento e analise de bases CSV/XLS

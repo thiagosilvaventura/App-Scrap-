@@ -1,0 +1,27 @@
+[tool.briefcase]
+project_name = "Data Analyzer Pro"
+bundle = "com.example"
+version = "0.1.0"
+url = "https://github.com/thiagosilvaventura/App-Scrap-"
+license = "MIT"
+author = "Thiago Ventura"
+author_email = "developer@example.com"
+
+[tool.briefcase.app.data_analyzer]
+formal_name = "Data Analyzer Pro"
+description = "App para cruzamento e analise de bases CSV/XLS"
+icon = "src/data_analyzer/resources/data_analyzer"
+sources = [
+    "src/data_analyzer",
+]
+requires = [
+    "toga>=0.4.0",
+    "pandas>=2.0.0",
+    "openpyxl>=3.1.0",
+]
+
+[tool.briefcase.app.data_analyzer.android]
+build_style = "aab"
+
+[tool.briefcase.app.data_analyzer.windows]
+build_style = "msix"

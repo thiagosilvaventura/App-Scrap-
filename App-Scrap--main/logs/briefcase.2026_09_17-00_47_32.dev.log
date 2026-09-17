@@ -1,0 +1,248 @@
+Date/Time:       2026-09-17 00:47:33 
+Command line:    C:\Users\Thiago\AppData\Local\Programs\Python\Python311\Scripts\briefcase dev
+
+OS Release:      Windows 10
+OS Version:      10.0.26200
+Architecture:    AMD64
+Platform:        Windows-10-10.0.26200-SP0
+
+Python exe:      C:\Users\Thiago\AppData\Local\Programs\Python\Python311\python.exe
+Python version:  3.11.4 (tags/v3.11.4:d2340ef, Jun  7 2023, 05:45:37) [MSC v.1934 64 bit (AMD64)]
+Virtual env:     False
+Conda env:       False
+
+Briefcase:       0.4.5
+Target platform: windows
+Target format:   app
+
+Environment Variables:
+	ALLUSERSPROFILE=C:\ProgramData
+	APPDATA=C:\Users\Thiago\AppData\Roaming
+	BUNDLED_DEBUGPY_PATH=c:\Users\Thiago\.vscode\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\libs\debugpy
+	CHROME_CRASHPAD_PIPE_NAME=\\.\pipe\crashpad_16912_HAXLMUPHVXTUBQXY
+	COLORTERM=truecolor
+	COMMONPROGRAMFILES=C:\Program Files\Common Files
+	COMMONPROGRAMFILES(X86)=C:\Program Files (x86)\Common Files
+	COMMONPROGRAMW6432=C:\Program Files\Common Files
+	COMPUTERNAME=DESKTOP-HA8LIVE
+	COMSPEC=C:\WINDOWS\system32\cmd.exe
+	DRIVERDATA=C:\Windows\System32\Drivers\DriverData
+	EFC_6248_1592913036=1
+	EFC_6248_4126798990=1
+	FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer
+	FPS_BROWSER_USER_PROFILE_STRING=Default
+	HOMEDRIVE=C:
+	HOMEPATH=\Users\Thiago
+	INTEL_DEV_REDIST=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\
+	LANG=en_US.UTF-8
+	LOCALAPPDATA=C:\Users\Thiago\AppData\Local
+	LOGONSERVER=\\DESKTOP-HA8LIVE
+	MIC_LD_LIBRARY_PATH=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\compiler\lib\intel64_win_mic
+	NUMBER_OF_PROCESSORS=8
+	ONEDRIVE=C:\Users\Thiago\OneDrive
+	ONEDRIVECONSUMER=C:\Users\Thiago\OneDrive
+	OS=Windows_NT
+	PATH=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Users\Thiago\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\Thiago\AppData\Local\Programs\Python\Python311\;C:\Users\Thiago\AppData\Local\Microsoft\WindowsApps;;C:\Users\Thiago\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Thiago\AppData\Roaming\npm;c:\Users\Thiago\.vscode\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts
+	PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL
+	PROCESSOR_ARCHITECTURE=AMD64
+	PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 166 Stepping 0, GenuineIntel
+	PROCESSOR_LEVEL=6
+	PROCESSOR_REVISION=a600
+	PROGRAMDATA=C:\ProgramData
+	PROGRAMFILES=C:\Program Files
+	PROGRAMFILES(X86)=C:\Program Files (x86)
+	PROGRAMW6432=C:\Program Files
+	PSMODULEPATH=C:\Users\Thiago\Documents\WindowsPowerShell\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+	PUBLIC=C:\Users\Public
+	PYDEVD_DISABLE_FILE_VALIDATION=1
+	PYTHONSTARTUP=c:\Users\Thiago\AppData\Roaming\Code\User\workspaceStorage\a6610babc86aa59303e771627ebb6848\ms-python.python\pythonrc.py
+	PYTHON_BASIC_REPL=1
+	SESSIONNAME=Console
+	SYSTEMDRIVE=C:
+	SYSTEMROOT=C:\WINDOWS
+	TEMP=C:\Users\Thiago\AppData\Local\Temp
+	TERM_PROGRAM=vscode
+	TERM_PROGRAM_VERSION=1.117.0
+	TMP=C:\Users\Thiago\AppData\Local\Temp
+	USERDOMAIN=DESKTOP-HA8LIVE
+	USERDOMAIN_ROAMINGPROFILE=DESKTOP-HA8LIVE
+	USERNAME=Thiago
+	USERPROFILE=C:\Users\Thiago
+	VSCODE_A11Y_MODE=0
+	VSCODE_DEBUGPY_ADAPTER_ENDPOINTS=c:\Users\Thiago\.vscode\extensions\ms-python.debugpy-2026.6.0-win32-x64\.noConfigDebugAdapterEndpoints\endpoint-e9198430eca892e7.txt
+	VSCODE_INJECTION=1
+	VSCODE_NONCE=a22b71f5-ba7c-4e5d-a0a3-8dfe3d2b945e
+	VSCODE_STABLE=1
+	WINDIR=C:\WINDOWS
+
+pyproject.toml:
+[tool.briefcase]
+project_name = "APP SCRAP"
+bundle = "org.example"
+version = "0.1.0"
+url = "https://github.com/thiagosilvaventura/App-Scrap-"
+license = "MIT"
+author = "Thiago Ventura"
+author_email = "developer@example.com"
+
+[tool.briefcase.app.data_analyzer]
+formal_name = "APP SCRAP"
+description = "Data processing and correlation tool"
+icon = "src/data_analyzer/resources/data_analyzer"
+sources = [
+    "src/data_analyzer",
+]
+requires = [
+    "toga>=0.4.0",
+    "pandas>=2.0.0",
+    "openpyxl>=3.1.0",
+]
+
+[tool.briefcase.app.data_analyzer.android]
+build_style = "aab"
+
+[tool.briefcase.app.data_analyzer.windows]
+build_style = "msix"
+
+Briefcase Log:
+[00:47:28]                                                                                                                                                                dev.py:295
+           [data_analyzer] Activating dev environment...                                                                                                                  dev.py:295
+                                                                                                                                                                          dev.py:331
+           [data_analyzer] Starting in dev mode...                                                                                                                        dev.py:331
+                                                                                                                                                                   subprocess.py:845
+           >>> Running Command:                                                                                                                                    subprocess.py:845
+           >>>     'C:\Users\Thiago\Downloads\App-Scrap--main\App-Scrap--main\.briefcase\data_analyzer\venv-dev.cp311-win_amd64\Scripts\python.exe' -c 'import     subprocess.py:845
+           runpy, sys;sys.path.pop(0);sys.argv.extend([]);runpy.run_module("data_analyzer", run_name="__main__", alter_sys=True)'                                                   
+           >>> Working Directory:                                                                                                                                  subprocess.py:845
+           >>>     C:\Users\Thiago                                                                                                                                 subprocess.py:845
+           >>> Environment Overrides:                                                                                                                              subprocess.py:845
+           >>>     PYTHONPATH=C:\Users\Thiago\Downloads\App-Scrap--main\App-Scrap--main\src                                                                        subprocess.py:845
+           >>>     PYTHONMALLOC=default                                                                                                                            subprocess.py:845
+           >>>     PYTHONUNBUFFERED=1                                                                                                                              subprocess.py:845
+           >>>     PYTHONDEVMODE=1                                                                                                                                 subprocess.py:845
+           >>>     PYTHONUTF8=1                                                                                                                                    subprocess.py:845
+           >>>     PATH=C:\Users\Thiago\Downloads\App-Scrap--main\App-Scrap--main\.briefcase\data_analyzer\venv-dev.cp311-win_amd64\Scripts;C:\Program Files       subprocess.py:845
+           (x86)\Common Files\Intel\Shared                                                                                                                                          
+           Libraries\redist\intel64_win\compiler;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\Sy                  
+           stem32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\Program Files (x86)\Windows Kits\10\Windows Performance                                             
+           Toolkit\;C:\Users\Thiago\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\Thiago\AppData\Local\Programs\Python\Python311\;C:\Users\Thiago\AppD                  
+           ata\Local\Microsoft\WindowsApps;;C:\Users\Thiago\AppData\Local\Programs\Microsoft VS                                                                                     
+           Code\bin;C:\Users\Thiago\AppData\Roaming\npm;c:\Users\Thiago\.vscode\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts                     
+           >>>     VIRTUAL_ENV=C:\Users\Thiago\Downloads\App-Scrap--main\App-Scrap--main\.briefcase\data_analyzer\venv-dev.cp311-win_amd64                         subprocess.py:845
+           ===========================================================================                                                                                    run.py:175
+[00:47:32] Traceback (most recent call last):                                                                                                                      subprocess.py:196
+             File "<string>", line 1, in <module>                                                                                                                  subprocess.py:196
+             File "<frozen runpy>", line 226, in run_module                                                                                                        subprocess.py:196
+             File "<frozen runpy>", line 98, in _run_module_code                                                                                                   subprocess.py:196
+             File "<frozen runpy>", line 88, in _run_code                                                                                                          subprocess.py:196
+             File "C:\Users\Thiago\Downloads\App-Scrap--main\App-Scrap--main\src\data_analyzer\__main__.py", line 1, in <module>                                   subprocess.py:196
+               from data_analyzer.app import main                                                                                                                  subprocess.py:196
+           ImportError: cannot import name 'main' from 'data_analyzer.app' (C:\Users\Thiago\Downloads\App-Scrap--main\App-Scrap--main\src\data_analyzer\app.py)    subprocess.py:196
+                                                                                                                                                                      __main__.py:42
+           Problem running app data_analyzer (return code 1).                                                                                                         __main__.py:43
+           Saving log... started                                                                                                                                      console.py:566
+
+Main thread traceback:
+╭─────────────────────────────────────────────────────────────────────── Traceback (most recent call last) ────────────────────────────────────────────────────────────────────────╮
+│ C:\Users\Thiago\AppData\Local\Programs\Python\Python311\Lib\site-packages\briefcase\__main__.py:27 in main                                                                       │
+│                                                                                                                                                                                  │
+│   24 │   │   │   Path.cwd() / "pyproject.toml",                                                                                                                                  │
+│   25 │   │   │   overrides=overrides,                                                                                                                                            │
+│   26 │   │   )                                                                                                                                                                   │
+│ ❱ 27 │   │   command(**options)                                                                                                                                                  │
+│   28 │   except HelpText as e:                                                                                                                                                   │
+│   29 │   │   console.info()                                                                                                                                                      │
+│   30 │   │   console.info(str(e))                                                                                                                                                │
+│                                                                                                                                                                                  │
+│ ╭───────────────────────────────────────────────────────────────── locals ──────────────────────────────────────────────────────────────────╮                                    │
+│ │       command = <briefcase.platforms.windows.app.WindowsAppDevCommand object at 0x0000026CAE5FB190>                                       │                                    │
+│ │       console = <briefcase.console.Console object at 0x0000026CAA755050>                                                                  │                                    │
+│ │             e = BriefcaseCommandError('Problem running app data_analyzer (return code 1).')                                               │                                    │
+│ │ extra_cmdline = []                                                                                                                        │                                    │
+│ │       options = {'appname': None, 'update_requirements': False, 'isolated': True, 'run_app': True, 'test_mode': False, 'passthrough': []} │                                    │
+│ │     overrides = {}                                                                                                                        │                                    │
+│ │        result = 200                                                                                                                       │                                    │
+│ ╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯                                    │
+│                                                                                                                                                                                  │
+│ C:\Users\Thiago\AppData\Local\Programs\Python\Python311\Lib\site-packages\briefcase\commands\dev.py:332 in __call__                                                              │
+│                                                                                                                                                                                  │
+│   329 │   │   │   │   )                                                                                                                                                          │
+│   330 │   │   │   else:                                                                                                                                                          │
+│   331 │   │   │   │   self.console.info("Starting in dev mode...", prefix=app.app_name)                                                                                          │
+│ ❱ 332 │   │   │   return self.run_dev_app(                                                                                                                                       │
+│   333 │   │   │   │   app,                                                                                                                                                       │
+│   334 │   │   │   │   env=self.get_environment(app),                                                                                                                             │
+│   335 │   │   │   │   venv=venv,                                                                                                                                                 │
+│                                                                                                                                                                                  │
+│ ╭────────────────────────────────────────────────────────── locals ───────────────────────────────────────────────────────────╮                                                  │
+│ │                 app = <org.example.data-analyzer v0.1.0 FinalizedAppConfig>                                                 │                                                  │
+│ │             appname = None                                                                                                  │                                                  │
+│ │             created = False                                                                                                 │                                                  │
+│ │         env_manager = 'venv'                                                                                                │                                                  │
+│ │           finalized = {'data_analyzer': <org.example.data-analyzer v0.1.0 FinalizedAppConfig>}                              │                                                  │
+│ │            isolated = True                                                                                                  │                                                  │
+│ │             options = {}                                                                                                    │                                                  │
+│ │         passthrough = []                                                                                                    │                                                  │
+│ │             run_app = True                                                                                                  │                                                  │
+│ │                self = <briefcase.platforms.windows.app.WindowsAppDevCommand object at 0x0000026CAE5FB190>                   │                                                  │
+│ │           test_mode = False                                                                                                 │                                                  │
+│ │ update_requirements = False                                                                                                 │                                                  │
+│ │                venv = <briefcase.integrations.virtual_environment.venv.VenvVirtualEnvironment object at 0x0000026CAE613A10> │                                                  │
+│ ╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯                                                  │
+│                                                                                                                                                                                  │
+│ C:\Users\Thiago\AppData\Local\Programs\Python\Python311\Lib\site-packages\briefcase\commands\dev.py:180 in run_dev_app                                                           │
+│                                                                                                                                                                                  │
+│   177 │   │   │   )                                                                                                                                                              │
+│   178 │   │   │                                                                                                                                                                  │
+│   179 │   │   │   # Start streaming logs for the app.                                                                                                                            │
+│ ❱ 180 │   │   │   self._stream_app_logs(                                                                                                                                         │
+│   181 │   │   │   │   app,                                                                                                                                                       │
+│   182 │   │   │   │   popen=app_popen,                                                                                                                                           │
+│   183 │   │   │   │   clean_output=False,                                                                                                                                        │
+│                                                                                                                                                                                  │
+│ ╭────────────────────────────────────────────────────── locals ───────────────────────────────────────────────────────╮                                                          │
+│ │         app = <org.example.data-analyzer v0.1.0 FinalizedAppConfig>                                                 │                                                          │
+│ │   app_popen = <Popen: returncode: 1 args: ['C:\\Users\\Thiago\\Downloads\\App-Scrap--main\...>                      │                                                          │
+│ │     cmdline = [                                                                                                     │                                                          │
+│ │               │   'C:\\Users\\Thiago\\AppData\\Local\\Programs\\Python\\Python311\\python.exe',                     │                                                          │
+│ │               │   '-c',                                                                                             │                                                          │
+│ │               │   'import runpy, sys;sys.path.pop(0);sys.argv.extend([]);runpy.run_module("data_ana'+44             │                                                          │
+│ │               ]                                                                                                     │                                                          │
+│ │         env = {                                                                                                     │                                                          │
+│ │               │   'PYTHONPATH': 'C:\\Users\\Thiago\\Downloads\\App-Scrap--main\\App-Scrap--main\\src',              │                                                          │
+│ │               │   'PYTHONMALLOC': 'default',                                                                        │                                                          │
+│ │               │   'PYTHONUNBUFFERED': '1',                                                                          │                                                          │
+│ │               │   'PYTHONDEVMODE': '1',                                                                             │                                                          │
+│ │               │   'PYTHONUTF8': '1'                                                                                 │                                                          │
+│ │               }                                                                                                     │                                                          │
+│ │     env_key = 'PYTHONUTF8'                                                                                          │                                                          │
+│ │   env_value = '1'                                                                                                   │                                                          │
+│ │ main_module = 'data_analyzer'                                                                                       │                                                          │
+│ │     options = {}                                                                                                    │                                                          │
+│ │ passthrough = []                                                                                                    │                                                          │
+│ │        self = <briefcase.platforms.windows.app.WindowsAppDevCommand object at 0x0000026CAE5FB190>                   │                                                          │
+│ │        venv = <briefcase.integrations.virtual_environment.venv.VenvVirtualEnvironment object at 0x0000026CAE613A10> │                                                          │
+│ ╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯                                                          │
+│                                                                                                                                                                                  │
+│ C:\Users\Thiago\AppData\Local\Programs\Python\Python311\Lib\site-packages\briefcase\commands\run.py:212 in _stream_app_logs                                                      │
+│                                                                                                                                                                                  │
+│   209 │   │   │   │   # If we're monitoring an actual app (not just a log stream),                                                                                               │
+│   210 │   │   │   │   # and the app didn't exit cleanly, surface the error to the user.                                                                                          │
+│   211 │   │   │   │   if (status_code := popen.poll()) != 0:                                                                                                                     │
+│ ❱ 212 │   │   │   │   │   raise BriefcaseCommandError(                                                                                                                           │
+│   213 │   │   │   │   │   │   f"Problem running app {app.app_name} "                                                                                                             │
+│   214 │   │   │   │   │   │   f"(return code {status_code})."                                                                                                                    │
+│   215 │   │   │   │   │   )                                                                                                                                                      │
+│                                                                                                                                                                                  │
+│ ╭────────────────────────────────────────────── locals ──────────────────────────────────────────────╮                                                                           │
+│ │          app = <org.example.data-analyzer v0.1.0 FinalizedAppConfig>                               │                                                                           │
+│ │ clean_filter = None                                                                                │                                                                           │
+│ │ clean_output = False                                                                               │                                                                           │
+│ │   log_filter = <briefcase.commands.run.LogFilter object at 0x0000026CAAC0EFD0>                     │                                                                           │
+│ │   log_stream = False                                                                               │                                                                           │
+│ │        popen = <Popen: returncode: 1 args: ['C:\\Users\\Thiago\\Downloads\\App-Scrap--main\...>    │                                                                           │
+│ │         self = <briefcase.platforms.windows.app.WindowsAppDevCommand object at 0x0000026CAE5FB190> │                                                                           │
+│ │  status_code = 1                                                                                   │                                                                           │
+│ ╰────────────────────────────────────────────────────────────────────────────────────────────────────╯                                                                           │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+BriefcaseCommandError: Problem running app data_analyzer (return code 1).
