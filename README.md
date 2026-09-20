@@ -1,4 +1,7 @@
-# 🚀 Analyzer Pro Max
+# 🚀App scrap
+
+
+Web Analyzer Pro Max
 
 > **Local dataset comparison and variable analysis — powered by Pandas and Streamlit.**
 
@@ -44,7 +47,6 @@ Supported formats:
 
 The application provides a simple interface for uploading multiple datasets simultaneously.
 
-![Drag & Drop Upload Interface](images/upload-interface.png)
 
 ---
 
@@ -52,7 +54,7 @@ The application provides a simple interface for uploading multiple datasets simu
 
 After uploading the datasets, Analyzer Pro Max automatically compares variables across the available files.
 
-![Cross-Dataset Analysis Dashboard](images/cross-dataset-analysis.png)
+
 
 ---
 
@@ -60,7 +62,7 @@ After uploading the datasets, Analyzer Pro Max automatically compares variables 
 
 Variables can be ranked according to metrics such as **fill rate, quantity, cardinality, and similarity**.
 
-![Dynamic Ranking Metrics](images/dynamic-ranking.png)
+
 
 > **Image paths:** Replace the filenames above with the actual image filenames you upload to the repository.
 > Recommended structure:
